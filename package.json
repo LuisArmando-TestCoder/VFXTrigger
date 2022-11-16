@@ -1,0 +1,54 @@
+{
+  "name": "atomic-gatsby-typescript-recoiljs",
+  "private": true,
+  "description": "An atomic bare-bones starter for Gatsby with Typescript and Recoil.js",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "gatsby": "^2.31.0",
+    "gatsby-plugin-react-helmet": "^3.9.0",
+    "gatsby-plugin-sass": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "recoil": "^0.1.2",
+    "recoil-outside": "^0.1.1",
+    "ssr-window": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-a11y": "^6.3.8",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.3.8",
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "prettier": "2.2.1",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuisArmando-TestCoder/atomic-gatsby-typescript-recoiljs"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

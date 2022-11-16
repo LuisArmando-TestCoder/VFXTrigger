@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    width: .3rem;
+    height: .3rem;
+
+    &-track {
+        background: white;
+    }
+
+    &-thumb {
+        background: #101010;
+
+        &:hover {
+            background: black;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--paragraph-font);
+}
+
+canvas {
+    display: block;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--title-font);
+}
