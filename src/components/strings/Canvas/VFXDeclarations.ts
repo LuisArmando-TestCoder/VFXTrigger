@@ -1,5 +1,6 @@
 import opaque from "../../../VFX/clear/opaque"
 import radar from "../../../VFX/show/radar"
+import voids from "../../../VFX/show/voids"
 
 type TriggerMap = {
   [index: string]: ((data: { [index: string]: any }) => () => void)[]
@@ -7,7 +8,8 @@ type TriggerMap = {
 
 export const functionToTriggers: TriggerMap = {
   q: [radar],
+  w: [voids],
 }
 export const functionToNonAvailableTriggers: TriggerMap = {
-  w: [opaque],
+  z: [opaque],
 }
