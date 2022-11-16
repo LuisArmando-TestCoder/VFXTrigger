@@ -1,9 +1,11 @@
+import  FunctionTrigger from './FunctionTrigger'
 import  getIntervenedSessionStorageRequest from './getIntervenedSessionStorageRequest'
 import  getUpdatingStorage from './getUpdatingStorage'
-import  FunctionTrigger from './FunctionTrigger'
+import  usePromisedRecoilValue from './usePromisedRecoilValue'
 
 export {
+   FunctionTrigger,
    getIntervenedSessionStorageRequest,
    getUpdatingStorage,
-   FunctionTrigger,
+   usePromisedRecoilValue,
 }
