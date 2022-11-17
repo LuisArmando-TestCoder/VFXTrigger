@@ -15,7 +15,6 @@ export default presetObject => {
 
   const sky = createSky(getGlobalConfig, presetObject)
 
-  console.log(sky.stars)
   return () => {
     presetObject.renderGroup("arc", sky.stars, sky.updateStar)
   }
