@@ -10,7 +10,7 @@ export default ({ render }: { render? }) => {
 
     render({
       ...getCenter(),
-      color: "#002497",
+      color: "#fff",
       thickness: 1.5,
       rotation: new Date().getMilliseconds() / 10,
       scale: circleSlices / 7,

@@ -1,30 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react'
-import preset from 'canvas-preset'
-import declareVFXKeys from './declareVFXKeys'
-import './styles.scss'
+import React, { useEffect, useRef, useState } from "react"
+import preset from "canvas-preset"
+import declareVFXKeys from "./declareVFXKeys"
+import "./styles.scss"
 
-export default ({
-	className = '',
-	id
-}: {
-	className?: string
-	id: string
-}) => {
-	const canvasRef = useRef(null)
+export default ({ className = "", id }: { className?: string; id: string }) => {
+  const canvasRef = useRef(null)
 
-	useEffect(() => {
-		const presetObject = preset()
-		  
-		presetObject.size()
+  useEffect(() => {
+    const presetObject = preset()
 
-		  const triggerVFX = declareVFXKeys(presetObject)
+    presetObject.size()
 
-		  presetObject.draw(() => {
-			triggerVFX()
-		  })
-	}, [])
+    const triggerVFX = declareVFXKeys(presetObject)
 
-	return (
-		<canvas ref={canvasRef} id={id} className={`canvas ${className}`}/>
-	)
+    presetObject.draw(() => {
+      triggerVFX()
+    })
+  }, [])
+
+  return <canvas ref={canvasRef} id={id} className={`canvas ${className}`} />
 }

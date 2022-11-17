@@ -67,7 +67,7 @@ function getBoids(amount) {
     acceleration: Math.random() / accelerationReduction,
     rotation: this.random(360),
     group: boidShape,
-    fill: "#001",
+    fill: "#fff",
     scale: 0.25,
     local: {},
   }))

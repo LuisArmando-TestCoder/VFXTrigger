@@ -1,5 +1,5 @@
 export default ({ clear }: { clear? }) => {
   return () => {
-    clear("#ffffff88")
+    clear("#00000011")
   }
 }
