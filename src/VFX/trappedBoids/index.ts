@@ -5,7 +5,8 @@ const getColorValue = () =>
 const getColor = () => `rgb(68, ${getColorValue()}, ${getColorValue()})`
 const radius = 1;
 const speed = 2;
-const viewRadius = 50;
+const viewRadius = 100;
+const boundary = 412;
 
 export default presetObject => {
   const boids = getBoids.call(presetObject, 500)
@@ -171,7 +172,7 @@ function setBoidBoundary(movedBoid, boid) {
     centeredVertex,
     movedBoid
   )
-  const isOutOfBoundary = Math.abs(distanceFromCenter) > this.c.height / 2 - 10
+  const isOutOfBoundary = Math.abs(distanceFromCenter) >= boundary
   if (isOutOfBoundary) {
     movedBoid.speed = -movedBoid.speed
   }
