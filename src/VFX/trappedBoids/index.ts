@@ -174,6 +174,11 @@ function setBoidBoundary(movedBoid, boid) {
   )
   const isOutOfBoundary = Math.abs(distanceFromCenter) >= boundary
   if (isOutOfBoundary) {
+    if (Math.abs(Math.abs(distanceFromCenter) - boundary) > 1) {
+      movedBoid.x = this.c.width / 2;
+      movedBoid.y = this.c.height / 2;
+    }
+
     movedBoid.speed = -movedBoid.speed
   }
 }
