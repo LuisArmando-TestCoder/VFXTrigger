@@ -1,4 +1,4 @@
-# Atomic Gatsby TypeScript Recoil.js
+# VFX Trigger
 ### With Storybook and accessibility Addons
 
 ## 🚀 Quick start
@@ -11,8 +11,8 @@
 
 1.  **Create a Gatsby site.**
     ```shell
-    # create a new project using the atomic-gatsby-react-typescript-recoiljs
-    gatsby new my-project-name https://github.com/LuisArmando-TestCoder/atomic-gatsby-typescript-recoiljs
+    # create a new project using VFXTrigger
+    gatsby new my-project-name https://github.com/LuisArmando-TestCoder/VFXTrigger
     ```
 
 2. **Create component**
