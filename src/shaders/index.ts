@@ -1,5 +1,5 @@
 
-import hillPattern from './hillPattern'
+import flowerLights from './flowerLights'
 import gooeyMosaic from './gooeyMosaic'
 import zoomTest from './zoomTest'
 import planet from './planet'
@@ -19,7 +19,7 @@ import fractalPyramid from './fractalPyramid'
 import fractalLinesOfSymmetry from './fractalLinesOfSymmetry'
 
 export {
-    hillPattern,
+    flowerLights,
     gooeyMosaic,
     zoomTest,
     planet,
