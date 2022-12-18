@@ -1,18 +1,19 @@
-import React, {useEffect} from 'react'
-import presetScene, {  } from 'scene-preset'
+import React, { useEffect } from 'react'
+import callScenes3D from './callScenes3D'
 import './styles.scss'
 
-export default ({
-	className = '',
-	id,
+const Component = ({ scenes, className = '', id }: {
+    scenes: string[]
+    id: string
+    className?: string
 }) => {
-	useEffect(() => {
-		presetScene([
-			console.log
-		], `#${id}`)
-	}, [])
+    useEffect(() => callScenes3D(scenes, id), [])
 
-	return (
-		<canvas id={id} className={`canvas3d ${className}`}/>
-	)
+    return (
+        <div className={`canvas3d ${className}`}>
+			<canvas id={id}/>
+		</div>
+    )
 }
+
+export default Component

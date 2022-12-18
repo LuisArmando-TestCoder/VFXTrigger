@@ -5,7 +5,7 @@ import { GlobalWrapper, Canvas3D } from "../../components/strings"
 export default () => {
   return (
     <GlobalWrapper title='Scenes | Home'>
-      <Canvas3D id="home"/>
+      <Canvas3D id="home" scenes={["home", "popinout"]}/>
     </GlobalWrapper>
   )
 }
