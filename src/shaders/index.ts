@@ -17,6 +17,7 @@ import opticalDeconstruction1B from './opticalDeconstruction1B'
 import galaxyUniverses from './galaxyUniverses'
 import fractalPyramid from './fractalPyramid'
 import fractalLinesOfSymmetry from './fractalLinesOfSymmetry'
+import moonlight from './moonlight'
 
 export {
     flowerLights,
@@ -37,4 +38,5 @@ export {
     galaxyUniverses,
     fractalPyramid,
     fractalLinesOfSymmetry,
+    moonlight,
 }

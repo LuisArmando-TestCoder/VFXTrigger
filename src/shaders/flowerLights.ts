@@ -24,9 +24,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec3 color = vec3(0.);
     float timeSpeed = .5;
     vec3 rotatingColor = cos(iTime*timeSpeed+uv.xyx+vec3(0,2,4));
-    float itemsAmount = 20.;
+    const float itemsAmount = 20.;
     float zoom = .25;
-    float amount = 25.;
+    const float amount = 25.;
     float stretch = 4.;
     float shineReduction = 7.;
     float rotationDisplacement = 2. + sin(iTime * timeSpeed) * cos(iTime * timeSpeed);
